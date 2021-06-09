@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProduceStamp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="스탬프 이름"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edtStampName"
+                android:layout_marginLeft="10dp"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/border_edt"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="총 Count"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edtCount"
+                android:layout_marginLeft="10dp"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/border_edt"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="3dp"
+                android:text="유형"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/ibQuestion"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/question_mark" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/border_edt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="사용가능 아이템"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/llAddView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/recyclerItems"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="300dp"/>-->
+
+
+
+
+        <Button
+            android:id="@+id/btnCreateStamp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="생성"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

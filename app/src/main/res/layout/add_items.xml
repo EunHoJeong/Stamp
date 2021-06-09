@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/edtItemName"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:hint="혜택"
+                android:background="@drawable/border_edt"/>
+
+            <EditText
+                android:id="@+id/edtItemCount"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:hint="위치"
+                android:background="@drawable/border_edt"/>
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/imgChoice"
+                android:layout_width="96dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/image_choice"
+                android:background="#E4E4E4"/>
+
+            <ImageButton
+                android:id="@+id/ibController"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/plus"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
